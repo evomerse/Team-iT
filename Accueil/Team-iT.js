@@ -94,3 +94,8 @@
                 `;
             };
         }
+
+// Define the function
+function redirectToPage() {
+    window.location.href = "/Terminale/terminale.html";
+}
