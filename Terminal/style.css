@@ -120,6 +120,8 @@
 /*style javascript*/
 #output{
     font-size: 150%;
+    margin-bottom: 2%;
+    margin-inline-start: 2%;
 }
 
 #input {
