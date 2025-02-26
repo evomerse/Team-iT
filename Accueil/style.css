@@ -63,6 +63,23 @@
             background-color: #ffa55c;
         }
 
+        .btnredirect {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 1em;
+            color: white;
+            background-color: #ff7f40;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .btnredirect:hover {
+            background-color: #ffa55c;
+        }
+
+
         form {
             max-width: 600px;
             margin: auto;
