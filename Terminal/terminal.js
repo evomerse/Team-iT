@@ -26,8 +26,79 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             question: "Quelle commande permet de visualiser le contenu d'un fichier texte ?",
             answer: ["cat"]
+        },
+        {
+            question: "Quelle commande permet de créer un nouveau répertoire ?",
+            answer: ["mkdir"]
+        },
+        {
+            question: "Quelle commande permet de copier un fichier ?",
+            answer: ["cp"]
+        },
+        {
+            question: "Quelle commande permet de déplacer un fichier ?",
+            answer: ["mv"]
+        },
+        {
+            question: "Quelle commande permet de supprimer un fichier ?",
+            answer: ["rm"]
+        },
+        {
+            question: "Quelle commande permet de voir les processus en cours ?",
+            answer: ["ps"]
+        },
+        {
+            question: "Quelle commande permet de changer les permissions d'un fichier ?",
+            answer: ["chmod"]
+        },
+        {
+            question: "Quelle commande permet de voir le contenu d'un fichier page par page ?",
+            answer: ["more"]
+        },
+        {
+            question: "Quelle commande permet d'afficher l'historique des commandes ?",
+            answer: ["history"]
+        },
+        {
+            question: "Quelle commande permet de rechercher un fichier dans le système ?",
+            answer: ["find"]
+        },
+        {
+            question: "Quelle commande permet de visualiser l'utilisation de la mémoire ?",
+            answer: ["free"]
+        },
+        {
+            question: "Quelle commande permet d'afficher les informations du système ?",
+            answer: ["uname"]
+        },
+        {
+            question: "Quelle commande permet de rediriger la sortie d'une commande vers un fichier ?",
+            answer: [">"]
+        },
+        {
+            question: "Quelle commande permet de télécharger un fichier depuis le web ?",
+            answer: ["wget"]
+        },
+        {
+            question: "Quelle commande permet de vérifier les informations réseau ?",
+            answer: ["ifconfig"]
+        },
+        {
+            question: "Quelle commande permet de changer de propriétaire d'un fichier ?",
+            answer: ["chown"]
         }
     ];
+
+
+    function shuffleQuestions(arr) {
+        for (let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arr[i], arr[j]] = [arr[j], arr[i]]; // Échange les éléments
+        }
+    }
+
+    // Mélanger les questions avant de commencer
+    shuffleQuestions(questions);
 
     // Fonction pour afficher du texte dans le terminal
     function showOutput(text, isAnswerCorrect = null) {
