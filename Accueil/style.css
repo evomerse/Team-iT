@@ -1,6 +1,6 @@
         /* CSS intégré */
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Ubuntu", serif;
             margin: 0;
             padding: 0;
             font-family: "Ubuntu", serif;
@@ -19,6 +19,7 @@
             max-width: 1200px;
             margin: auto;
             padding: 20px;
+            font-family: "Ubuntu", serif;
         }
 
         .row {
@@ -117,6 +118,7 @@
             transition-duration: .3s;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
             background-color: #ff7f40;
+            margin: 0.5%;
           }
           
           /* plus sign */
