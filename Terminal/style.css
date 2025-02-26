@@ -43,7 +43,7 @@
 }
 
 .btn-color {
-    background: #ee411a;
+    background: white;
 }
 
 .btn:hover {
@@ -111,14 +111,28 @@
     font-size: 100%;
 }
 
-.container .terminal_body input{
-    font-size: 100%;
+.container .terminal_body .terminal_promt{
+    font-size: 150%;
 }
 
+/*style javascript*/
 #output{
-    font-size: 105%;
+    font-size: 150%;
 }
 
+#input {
+    background: rgba(56, 4, 40, 0.9); /* Fond noir transparent (20% opaque) */
+    color: white;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    width: calc(100% - 10%);
+    margin-left: 2%;
+    margin-bottom: 10%;
+    border-radius: 5px;/
+}
+
+/*fin style javascript*/
 
 
 
@@ -143,7 +157,6 @@
         background: #ffffff;
     }
 }
-
 
 /* From Uiverse.io by vinodjangid07 */ 
 .Btn1 {
