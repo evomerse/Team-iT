@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Formation Terminal Linux</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="terminal_toolbar">
+            <div class="butt">
+                <button class="btn btn-color"></button>
+                <button class="btn"></button>
+                <button class="btn"></button>
+            </div>
+            <p class="user">team-it@admin: ~</p>
+        </div>
+        <div class="terminal_body">
+            <div id="output"></div>
+            <div class="terminal_promt">
+                <span class="terminal_user">team-it@admin:</span>
+                <span class="terminal_location">~</span>
+                <span class="terminal_bling">$</span>
+                <span class="terminal_cursor"></span>
+            </div>
+            <input id="input" type="text" placeholder="Entrez une commande..." autofocus />
+        </div>
+    </div>
+
+    <script src="/terminal.js"></script>
+</body>
+</html>
