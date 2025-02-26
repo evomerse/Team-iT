@@ -31,4 +31,5 @@ Step 3: Using TeamOS (Ubuntu kernel)
 1. Start TeamOS from the ISO you have selected in Ventoy.
 2. Follow the instructions
 
-Translated with DeepL.com (free version)
+
+Don't worry, the TeamOS bone is a live one, to get your windows back, just reboot your pc, unplug the key and you're done 👍
