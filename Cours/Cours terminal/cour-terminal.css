@@ -181,7 +181,7 @@ footer {
 }
 
 .button-icon {
-    background-color: #4ade80;
+    background-color: #4b7151;
     border-radius: 0.75rem;
     height: 3rem;
     width: 25%;
@@ -201,6 +201,7 @@ footer {
 .button-text {
     margin-left: 1rem;
     transition: color 0.3s;
+    margin: 0;
 }
 
 .button:hover .button-text {
