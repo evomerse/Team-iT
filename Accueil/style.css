@@ -3,6 +3,10 @@ body {
     font-family: "Ubuntu", serif;
     margin: 0;
     padding: 0;
+    background-image: url('/Images/Background_2.jpg'); /* Remplace par l'URL de ton image */
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition */
 }
 
 header,
@@ -10,7 +14,7 @@ footer {
     background-color: #4b7151;
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 0.5em 0; /* Réduit la hauteur du footer */
 }
 
 .container {
@@ -182,13 +186,6 @@ form {
     align-items: center;
 }
 
-body {
-    background-image: url('/Images/Background_2.jpg'); /* Remplace par l'URL de ton image */
-    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
-    background-position: center; /* Centre l'image */
-    background-repeat: no-repeat; /* Empêche la répétition */
-}
-
 .footer {
     position: fixed;
     bottom: 0;
@@ -197,67 +194,64 @@ body {
     text-align: center;
     overflow-x: hidden;
     flex-shrink: 0; /* Empêche le footer de rétrécir */
-    padding: 2em 0; /* Augmente la hauteur du footer */
+    padding: 0.5em 0; /* Réduit encore la hauteur du footer */
     background-color: #4b7151;
     color: white;
 }
 
 @media (max-width: 768px) {
     .footer {
-        padding: 1em 0; /* Ajuste le padding pour les petits écrans */
+        padding: 0.25em 0; /* Ajuste le padding pour les petits écrans */
     }
 }
 
-
-
 .question-container {
-  border: 2px solid #4b7151; /* Couleur du cadre */
-  border-radius: 8px; /* Coins arrondis */
-  padding: 15px; /* Espacement interne */
-  margin-bottom: 20px; /* Espacement externe */
-  background-color: #f8f8f8; /* Couleur de fond */
+    border: 2px solid #4b7151; /* Couleur du cadre */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 15px; /* Espacement interne */
+    margin-bottom: 20px; /* Espacement externe */
+    background-color: #f8f8f8; /* Couleur de fond */
 }
 
-
 .social-buttons {
-  display: center;
-  gap: 10px;
-  margin-bottom: 10px; /* Ajoute un espace entre chaque bouton */
+    display: center;
+    gap: 10px;
+    margin-bottom: 10px; /* Ajoute un espace entre chaque bouton */
 }
 
 .socialbtn {
-  color: white;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 10px 20px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .facebook {
-  background: linear-gradient(to right, #3b82f6, #2563eb, #1d4ed8);
-  box-shadow: 0 0 10px #3b82f6;
+    background: linear-gradient(to right, #3b82f6, #2563eb, #1d4ed8);
+    box-shadow: 0 0 10px #3b82f6;
 }
 
 .tiktok {
-  background: linear-gradient(to right, #ef4444, #dc2626, #b91c1c);
-  box-shadow: 0 0 10px #ef4444;
+    background: linear-gradient(to right, #ef4444, #dc2626, #b91c1c);
+    box-shadow: 0 0 10px #ef4444;
 }
 
 .linkedin {
-  background: linear-gradient(to right, #60a5fa, #3b82f6, #2563eb);
-  box-shadow: 0 0 10px #60a5fa;
+    background: linear-gradient(to right, #60a5fa, #3b82f6, #2563eb);
+    box-shadow: 0 0 10px #60a5fa;
 }
 
 .instagram {
-  background: linear-gradient(to right, #ec4899, #db2777, #be185d);
-  box-shadow: 0 0 10px #ec4899;
+    background: linear-gradient(to right, #ec4899, #db2777, #be185d);
+    box-shadow: 0 0 10px #ec4899;
 }
 
 .socialbtn:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
+    transform: scale(1.05);
+    opacity: 0.9;
 }
