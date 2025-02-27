@@ -1,3 +1,21 @@
+body {
+    font-family: "Ubuntu", serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/Images/Background_2.jpg'); /* Remplace par l'URL de ton image */
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition */
+}
+
+header,
+footer {
+    background-color: #4b7151;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
 .container {
     width: 500px;
     height: 400px;
@@ -8,7 +26,6 @@
     overflow: hidden;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
     font-family: "Ubuntu", serif;
-    
 }
 
 .terminal_toolbar {
@@ -109,16 +126,16 @@
     animation: curbl 1200ms linear infinite;
 }
 
-.container .terminal_toolbar p{
+.container .terminal_toolbar p {
     font-size: 100%;
 }
 
-.container .terminal_body .terminal_promt{
+.container .terminal_body .terminal_promt {
     font-size: 150%;
 }
 
 /*style javascript*/
-#output{
+#output {
     font-size: 150%;
     margin-bottom: 2%;
     margin-inline-start: 2%;
@@ -133,12 +150,10 @@
     width: calc(100% - 10%);
     margin-left: 2%;
     margin-bottom: 10%;
-    border-radius: 5px;/
+    border-radius: 5px;
 }
 
 /*fin style javascript*/
-
-
 
 @keyframes curbl {
     0% {
@@ -178,26 +193,27 @@
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
     background-color: #ff7f40;
     margin: 0.5%;
-  }
-  
-  /* plus sign */
-  .sign {
+}
+
+/* plus sign */
+.sign {
     width: 100%;
     transition-duration: .3s;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .sign svg {
+}
+
+.sign svg {
     width: 17px;
-  }
-  
-  .sign svg path {
+}
+
+.sign svg path {
     fill: white;
-  }
-  /* text */
-  .text {
+}
+
+/* text */
+.text {
     position: absolute;
     right: 0%;
     width: 0%;
@@ -206,35 +222,30 @@
     font-size: 1.2em;
     font-weight: 600;
     transition-duration: .3s;
-  }
-  /* hover effect on button width */
-  .Btn1:hover {
+}
+
+/* hover effect on button width */
+.Btn1:hover {
     width: 125px;
     border-radius: 40px;
     transition-duration: .3s;
-  }
-  
-  .Btn1:hover .sign {
+}
+
+.Btn1:hover .sign {
     width: 30%;
     transition-duration: .3s;
     padding-left: 20px;
-  }
-  /* hover effect button's text */
-  .Btn1:hover .text {
+}
+
+/* hover effect button's text */
+.Btn1:hover .text {
     opacity: 1;
     width: 70%;
     transition-duration: .3s;
     padding-right: 10px;
-  }
-  /* button click effect*/
-  .Btn1:active {
-    transform: translate(2px ,2px);
-  }
+}
 
-  header,
-  footer {
-      background-color: #4b7151;
-      color: white;
-      text-align: center;
-      padding: 1em 0;
-  }
+/* button click effect*/
+.Btn1:active {
+    transform: translate(2px ,2px);
+}
