@@ -2,6 +2,10 @@ function goToMenu() {
     window.location.href = "/Accueil/index.html";
   }
 
+  function goToCours() {
+    window.location.href = "/Cours/cours.html";
+}
+
   function loadVideo(container) {
     let videoId = container.parentElement.getAttribute("data-video-id");
     let iframe = document.createElement("iframe");
