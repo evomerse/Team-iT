@@ -3,7 +3,6 @@ body {
     font-family: "Ubuntu", serif;
     margin: 0;
     padding: 0;
-    font-family: "Ubuntu", serif;
 }
 
 header,
@@ -152,20 +151,20 @@ form {
 }
 
 /* hover effect on button width */
-.Btn1:hover, .Btn2:hover {
+.Btn1:hover {
     width: 125px;
     border-radius: 40px;
     transition-duration: .3s;
 }
 
-.Btn1:hover .sign, .Btn2:hover .sign {
+.Btn1:hover .sign {
     width: 30%;
     transition-duration: .3s;
     padding-left: 20px;
 }
 
 /* hover effect button's text */
-.Btn1:hover .text, .Btn2:hover .text {
+.Btn1:hover .text {
     opacity: 1;
     width: 70%;
     transition-duration: .3s;
@@ -173,7 +172,7 @@ form {
 }
 
 /* button click effect */
-.Btn1:active, .Btn2:active {
+.Btn1:active {
     transform: translate(2px, 2px);
 }
 
@@ -195,9 +194,26 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    max-width: 1220px; /* Ajuste selon ton design */
-    margin: 0 auto; /* Centre le footer */
     text-align: center;
     overflow-x: hidden;
     flex-shrink: 0; /* Empêche le footer de rétrécir */
+    padding: 2em 0; /* Augmente la hauteur du footer */
+    background-color: #4b7151;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 1em 0; /* Ajuste le padding pour les petits écrans */
+    }
+}
+
+
+
+.question-container {
+  border: 2px solid #4b7151; /* Couleur du cadre */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 15px; /* Espacement interne */
+  margin-bottom: 20px; /* Espacement externe */
+  background-color: #f8f8f8; /* Couleur de fond */
 }
