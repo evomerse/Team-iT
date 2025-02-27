@@ -95,7 +95,12 @@ function startQuiz(formationId) {
     };
 }
 
-// Define the function
+// Define the function for Terminal page redirection
 function redirectToPage() {
     window.location.href = "/Terminal/index.html";
+}
+
+// Define the function for cours
+function redirectToCours() {
+    window.location.href = "/Cours/cours.html";
 }
