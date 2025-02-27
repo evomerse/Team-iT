@@ -207,3 +207,13 @@ body {
         padding: 1em 0; /* Ajuste le padding pour les petits écrans */
     }
 }
+
+
+
+.question-container {
+  border: 2px solid #4b7151; /* Couleur du cadre */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 15px; /* Espacement interne */
+  margin-bottom: 20px; /* Espacement externe */
+  background-color: #f8f8f8; /* Couleur de fond */
+}
