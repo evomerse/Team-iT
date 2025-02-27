@@ -13,7 +13,7 @@ body {
 
 header,
 footer {
-    background-color: rgba(75, 113, 81, 0.8); /* Couleur de fond avec transparence */
+    background-color: #4b7151; /* Couleur de fond avec transparence */
     color: white;
     text-align: center;
     padding: 1em 0;
@@ -112,8 +112,11 @@ footer {
     overflow-x: hidden;
     flex-shrink: 0; /* Empêche le footer de rétrécir */
     padding: 1em 0; /* Ajuste la hauteur du footer */
-    background-color: rgba(75, 113, 81, 0.8); /* Couleur de fond avec transparence */
+    background-color: #4b7151; /* Couleur de fond avec transparence */
     color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 @media (max-width: 768px) {
