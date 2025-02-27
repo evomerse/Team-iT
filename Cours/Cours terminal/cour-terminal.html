@@ -38,12 +38,15 @@
 </div>
 </div>
 
-
-
-
-
-
-
+<button type="button" class="button" onclick="goToCours()">
+    <div class="button-icon">
+        <svg width="25px" height="25px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#000000" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"></path>
+            <path fill="#000000" d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"></path>
+        </svg>
+    </div>
+    <p class="button-text">Go Back</p>
+</button>
 
 <div class="container">
     <div class="content">
@@ -63,8 +66,11 @@
     </footer>
 </div>
 
-
-
-    <script src="/Cours/Cours terminal/cour-terminal.js"></script>
+<script src="/Cours/Cours terminal/cour-terminal.js"></script>
+<script>
+    function goToCours() {
+        window.location.href = "/Cours/cours.html";
+    }
+</script>
 </body>
 </html>

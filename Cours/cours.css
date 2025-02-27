@@ -111,7 +111,7 @@ footer {
     text-align: center;
     overflow-x: hidden;
     flex-shrink: 0; /* Empêche le footer de rétrécir */
-    padding: 0.5em 0; /* Réduit la hauteur du footer */
+    padding: 0.5em 0; /* Réduit encore la hauteur du footer */
     background-color: #4b7151;
     color: white;
 }
