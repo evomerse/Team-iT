@@ -2,6 +2,10 @@ body {
     font-family: "Ubuntu", serif;
     margin: 0;
     padding: 0;
+    background-image: url('/Images/Background_2.jpg'); /* Remplace par l'URL de ton image */
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition */
 }
 
 header,
@@ -9,7 +13,7 @@ footer {
     background-color: #4b7151;
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 0.5em 0; /* Réduit la hauteur du footer */
 }
 
 .container {
@@ -39,7 +43,6 @@ footer {
 .Btn1 {
     background-color: #ff7f40;
 }
-
 
 .sign {
     width: 100%;
@@ -100,7 +103,6 @@ footer {
     align-items: center;
 }
 
-
 .footer {
     position: fixed;
     bottom: 0;
@@ -109,18 +111,16 @@ footer {
     text-align: center;
     overflow-x: hidden;
     flex-shrink: 0; /* Empêche le footer de rétrécir */
-    padding: 2em 0; /* Augmente la hauteur du footer */
+    padding: 0.5em 0; /* Réduit la hauteur du footer */
     background-color: #4b7151;
     color: white;
 }
 
 @media (max-width: 768px) {
     .footer {
-        padding: 1em 0; /* Ajuste le padding pour les petits écrans */
+        padding: 0.25em 0; /* Ajuste le padding pour les petits écrans */
     }
 }
-
-
 
 .cours {
     display: flex;
@@ -129,7 +129,6 @@ footer {
     flex-wrap: wrap;
     padding: 20px;
 }
-
 
 .box {
     background-color: white;
@@ -146,14 +145,12 @@ footer {
     height: 100%;
 }
 
-
 .box a {
     position: absolute;
     top: 5px;
     font-size: 18px;
     color: white;
 }
-
 
 .boximage {
     width: 100%;
@@ -162,12 +159,10 @@ footer {
     border-radius: 10px;
 }
 
-
 h3 {
     margin: 40px 0;
     font-size: 1.2em;
 }
-
 
 .btn {
     display: flex;
@@ -184,4 +179,73 @@ h3 {
 .btn:hover {
     background-color: #ffa55c;
     color: white;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-btn.facebook {
+    background-color: #3b5998;
+}
+
+.social-btn.twitter {
+    background-color: #1da1f2;
+}
+
+.social-btn.linkedin {
+    background-color: #0077b5;
+}
+
+.social-btn:hover {
+    opacity: 0.8;
+}
+
+.socialbtn {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.facebook {
+    background: linear-gradient(to right, #3b82f6, #2563eb, #1d4ed8);
+    box-shadow: 0 0 10px #3b82f6;
+}
+
+.tiktok {
+    background: linear-gradient(to right, #ef4444, #dc2626, #b91c1c);
+    box-shadow: 0 0 10px #ef4444;
+}
+
+.linkedin {
+    background: linear-gradient(to right, #60a5fa, #3b82f6, #2563eb);
+    box-shadow: 0 0 10px #60a5fa;
+}
+
+.instagram {
+    background: linear-gradient(to right, #ec4899, #db2777, #be185d);
+    box-shadow: 0 0 10px #ec4899;
+}
+
+.socialbtn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
 }
