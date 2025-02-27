@@ -12,15 +12,6 @@ footer {
     padding: 1em 0;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    font-family: "Ubuntu", serif;
-}
-
-/* From Uiverse.io by vinodjangid07 */
 .Btn1 {
     display: flex;
     align-items: center;
@@ -114,6 +105,11 @@ footer {
     color: white;
 }
 
+.content h2{
+    text-align: center;
+
+}
+
 @media (max-width: 768px) {
     .footer {
         padding: 1em 0; /* Ajuste le padding pour les petits écrans */
@@ -122,66 +118,53 @@ footer {
 
 
 
-.cours {
+
+
+
+
+
+/* Centre la vidéo sur la page */
+.video-wrapper {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 20px;
+    align-items: center;
+    margin-top: 20px; /* Ajuste l'espace au besoin */
 }
 
-
-.box {
-    background-color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
+/* Style du conteneur YouTube */
+.youtube-container {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
+    width: 560px;
+    height: 315px;
+    cursor: pointer;
 }
 
-
-.box a {
-    position: absolute;
-    top: 5px;
-    font-size: 18px;
-    color: white;
-}
-
-
-.boximage {
+/* Style de la miniature */
+.youtube-thumbnail {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-
-h3 {
-    margin: 40px 0;
-    font-size: 1.2em;
-}
-
-
-.btn {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: #ff7f40;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: 0.3s ease;
-    margin-top: 230px;
 }
 
-.btn:hover {
-    background-color: #ffa55c;
+/* Style de l'image miniature */
+.youtube-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Style du bouton Play */
+.play-button {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
     color: white;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 20px 25px;
 }
