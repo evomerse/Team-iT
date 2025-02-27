@@ -10,13 +10,17 @@
 
 header,
 footer {
+    position: relative;
     background-color: #4b7151;
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 2em 10%;
 }
 
 .Btn1 {
+    position: absolute;
+    top: 10px; /* Distance du haut */
+    left: 10px; /* Distance du bord gauche */
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -25,68 +29,52 @@ footer {
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    position: relative;
     overflow: hidden;
-    transition-duration: .3s;
+    transition: width 0.3s ease, border-radius 0.3s ease;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
-  }
-  
-  .Btn1 {
     background-color: #ff7f40;
-  }
-  /* plus sign */
-  .sign {
-    width: 100%;
-    transition-duration: .3s;
+    padding: 0 10px;
+}
+
+/* Plus sign */
+.sign {
+    width: 17px;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .sign svg {
+    transition: transform 0.3s ease;
+}
+
+.sign svg {
     width: 17px;
-  }
-  
-  .sign svg path {
+}
+
+.sign svg path {
     fill: white;
-  }
-  /* text */
-  .text {
-    position: absolute;
-    right: 0%;
-    width: 0%;
+}
+
+/* Text */
+.text {
+    white-space: nowrap; /* Empêche le texte de se casser */
     opacity: 0;
     color: white;
     font-size: 1.2em;
     font-weight: 600;
-    transition-duration: .3s;
-  }
-  /* hover effect on button width */
-  .Btn1:hover{
+    transition: opacity 0.3s ease, width 0.3s ease;
+    margin-left: 10px;
+}
+
+/* Hover effect */
+.Btn1:hover {
     width: 125px;
     border-radius: 40px;
-    transition-duration: .3s;
-  }
-  
-  .Btn1:hover .sign .sign {
-    width: 30%;
-    transition-duration: .3s;
-    padding-left: 20px;
-  }
-  /* hover effect button's text */
-  .Btn1:hover .text{
+    left: 20px; /* Se déplace légèrement vers la droite au hover */
+}
+
+.Btn1:hover .sign {
+    transform: translateX(-5px); /* Décale légèrement l'icône vers la gauche */
+}
+
+.Btn1:hover .text {
     opacity: 1;
-    width: 70%;
-    transition-duration: .3s;
-    padding-right: 10px;
-  }
-  /* button click effect */
-  .Btn1:active{
-    transform: translate(2px, 2px);
-  }
-  
-  .button-container {
-    display: flex;
-    gap: 10px; /* Espacement entre les boutons */
-    align-items: center;
-  }
+}
