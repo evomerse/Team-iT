@@ -1,26 +1,27 @@
-*{
-    margin: auto;
-    padding: auto;
+body {
     font-family: "Ubuntu", serif;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    border: none;
+    margin: 0;
+    padding: 0;
 }
 
 header,
 footer {
-    position: relative;
     background-color: #4b7151;
     color: white;
     text-align: center;
-    padding: 2em 10%;
+    padding: 1em 0;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    font-family: "Ubuntu", serif;
+}
+
+/* From Uiverse.io by vinodjangid07 */
 .Btn1 {
-    position: absolute;
-    top: 10px; /* Distance du haut */
-    left: 10px; /* Distance du bord gauche */
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -29,20 +30,23 @@ footer {
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    position: relative;
     overflow: hidden;
-    transition: width 0.3s ease, border-radius 0.3s ease;
+    transition-duration: .3s;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
-    background-color: #ff7f40;
-    padding: 0 10px;
 }
 
-/* Plus sign */
+.Btn1 {
+    background-color: #ff7f40;
+}
+
+
 .sign {
-    width: 17px;
+    width: 100%;
+    transition-duration: .3s;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease;
 }
 
 .sign svg {
@@ -53,28 +57,131 @@ footer {
     fill: white;
 }
 
-/* Text */
 .text {
-    white-space: nowrap; /* Empêche le texte de se casser */
+    position: absolute;
+    right: 0%;
+    width: 0%;
     opacity: 0;
     color: white;
     font-size: 1.2em;
     font-weight: 600;
-    transition: opacity 0.3s ease, width 0.3s ease;
-    margin-left: 10px;
+    transition-duration: .3s;
 }
 
-/* Hover effect */
+/* hover effect on button width */
 .Btn1:hover {
     width: 125px;
     border-radius: 40px;
-    left: 20px; /* Se déplace légèrement vers la droite au hover */
+    transition-duration: .3s;
 }
 
 .Btn1:hover .sign {
-    transform: translateX(-5px); /* Décale légèrement l'icône vers la gauche */
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
 }
 
+/* hover effect button's text */
 .Btn1:hover .text {
     opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+}
+
+/* button click effect */
+.Btn1:active {
+    transform: translate(2px, 2px);
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Espacement entre les boutons */
+    align-items: center;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    overflow-x: hidden;
+    flex-shrink: 0; /* Empêche le footer de rétrécir */
+    padding: 2em 0; /* Augmente la hauteur du footer */
+    background-color: #4b7151;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 1em 0; /* Ajuste le padding pour les petits écrans */
+    }
+}
+
+
+
+.cours {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+.box {
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.box a {
+    position: absolute;
+    top: 5px;
+    font-size: 18px;
+    color: #ff7f40;
+}
+
+
+.boximage {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+h3 {
+    margin: 40px 0;
+    font-size: 1.2em;
+}
+
+
+.btn {
+    display: flex;
+    align-items: center;
+    background-color: #4b7151;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    margin-top: 230px;
+}
+
+.btn:hover {
+    background-color: #ff7f40;
+    color: #4b7151;
 }
