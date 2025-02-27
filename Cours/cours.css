@@ -6,14 +6,17 @@ body {
     background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Empêche la répétition */
+    min-height: 100vh; /* Assure que le fond couvre toute la hauteur de la page */
+    display: flex;
+    flex-direction: column;
 }
 
 header,
 footer {
-    background-color: #4b7151;
+    background-color: rgba(75, 113, 81, 0.8); /* Couleur de fond avec transparence */
     color: white;
     text-align: center;
-    padding: 0.5em 0; /* Réduit la hauteur du footer */
+    padding: 1em 0;
 }
 
 .container {
@@ -22,6 +25,7 @@ footer {
     margin: auto;
     padding: 20px;
     font-family: "Ubuntu", serif;
+    flex: 1; /* Permet à la section principale de prendre tout l'espace disponible */
 }
 
 /* From Uiverse.io by vinodjangid07 */
@@ -104,21 +108,17 @@ footer {
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
     text-align: center;
     overflow-x: hidden;
     flex-shrink: 0; /* Empêche le footer de rétrécir */
-    padding: 0.5em 0; /* Réduit encore la hauteur du footer */
-    background-color: #4b7151;
+    padding: 1em 0; /* Ajuste la hauteur du footer */
+    background-color: rgba(75, 113, 81, 0.8); /* Couleur de fond avec transparence */
     color: white;
 }
 
 @media (max-width: 768px) {
     .footer {
-        padding: 0.25em 0; /* Ajuste le padding pour les petits écrans */
+        padding: 0.5em 0; /* Ajuste le padding pour les petits écrans */
     }
 }
 
