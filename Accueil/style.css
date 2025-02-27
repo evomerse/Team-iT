@@ -104,7 +104,7 @@
         }
   
         /* From Uiverse.io by vinodjangid07 */
-.Btn1, .Btn2 {
+.Btn1 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -122,11 +122,6 @@
 .Btn1 {
   background-color: #ff7f40;
 }
-
-.Btn2 {
-  background-color: #ff7f40;
-}
-
 /* plus sign */
 .sign {
   width: 100%;
