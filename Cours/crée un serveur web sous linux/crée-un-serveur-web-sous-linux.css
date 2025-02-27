@@ -2,7 +2,6 @@ body {
     font-family: "Ubuntu", serif;
     margin: 0;
     padding: 0;
-    height: 1300px;
     background-image: url('/Images/Background_2.jpg'); /* Remplace par l'URL de ton image */
     background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
     background-position: center; /* Centre l'image */
@@ -11,8 +10,7 @@ body {
     min-height: 100vh; /* Assure que le fond couvre toute la hauteur de la page */
 }
 
-header,
-footer {
+header {
     background-color: #4b7151;
     color: white;
     text-align: center;
@@ -100,17 +98,11 @@ footer {
 
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    overflow-x: hidden;
-    flex-shrink: 0; /* Empêche le footer de rétrécir */
-    padding: 1em 0; /* Augmente la hauteur du footer */
     background-color: #4b7151;
     color: white;
-    z-index: 9999;
+    text-align: center;
+    padding: 1em 0;
+
 }
 
 .content h2{
