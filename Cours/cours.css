@@ -11,22 +11,14 @@ body {
     flex-direction: column;
 }
 
-header,
-footer {
+header{
     background-color: #4b7151; /* Couleur de fond avec transparence */
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 0.5em 0;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    font-family: "Ubuntu", serif;
-    flex: 1; /* Permet à la section principale de prendre tout l'espace disponible */
-}
+
 
 /* From Uiverse.io by vinodjangid07 */
 .Btn1 {
@@ -108,15 +100,11 @@ footer {
 }
 
 .footer {
-    text-align: center;
-    overflow-x: hidden;
-    flex-shrink: 0; /* Empêche le footer de rétrécir */
-    padding: 1em 0; /* Ajuste la hauteur du footer */
-    background-color: #4b7151; /* Couleur de fond avec transparence */
+    background-color: #4b7151;
     color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    text-align: center;
+    padding: 1em 0;
+    margin: 0rem;
 }
 
 @media (max-width: 768px) {
