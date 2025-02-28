@@ -11,21 +11,14 @@ body {
     min-height: 100vh; /* Assure que le fond couvre toute la hauteur de la page */
 }
 
-header,
-footer {
+header{
     background-color: #4b7151;
     color: white;
     text-align: center;
     padding: 0.5em 0; /* Réduit la hauteur du footer */
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    font-family: "Ubuntu", serif;
-}
+
 
 .row {
     display: flex;
@@ -41,6 +34,7 @@ footer {
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin: 1rem;
 }
 
 .card h5 {
@@ -188,17 +182,12 @@ form {
     align-items: center;
 }
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    overflow-x: hidden;
-    flex-shrink: 0; /* Empêche le footer de rétrécir */
-    padding: 0.5em 0; /* Réduit encore la hauteur du footer */
+footer {
     background-color: #4b7151;
     color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin: 0rem;
 }
 
 @media (max-width: 768px) {
@@ -213,6 +202,7 @@ form {
     padding: 15px; /* Espacement interne */
     margin-bottom: 20px; /* Espacement externe */
     background-color: #f8f8f8; /* Couleur de fond */
+    margin-top: 1rem;
 }
 
 .social-buttons {
