@@ -15,6 +15,42 @@ const questions = {
             options: ["pwd", "ls", "cd", "echo"],
             answer: "pwd"
         },
+        {
+            question: "Quelle commande permet de lister les fichiers et dossiers d'un répertoire ?",
+            options: ["pwd", "ls", "cd", "echo"],
+            answer: "ls"
+        },
+        {
+            question: "Quelle commande permet de créer un nouveau dossier ?",
+            options: ["mkdir", "touch", "rm", "cp"],
+            answer: "mkdir"
+        },
+        {
+            question: "Quelle commande permet de supprimer un fichier ?",
+            options: ["rm", "mv", "rmdir", "ls"],
+            answer: "rm"
+        },
+        {
+            question: "Quelle commande permet de rechercher un mot spécifique dans un fichier ?",
+            options: ["grep", "find", "locate", "echo"],
+            answer: "grep"
+        },
+        {
+            question: "Quelle commande permet de changer de répertoire ?",
+            options: ["cd", "ls", "pwd", "mkdir"],
+            answer: "cd"
+        },
+        {
+            question: "Quelle commande permet d'ajouter un utilisateur sous Linux ?",
+            options: ["adduser", "usermod", "passwd", "groupadd"],
+            answer: "adduser"
+        },
+        {
+            question: "Quelle commande permet d'éteindre proprement un système Linux ?",
+            options: ["shutdown /i", "shutdown -h now", "stop now", "off"],
+            answer: "shutdown -h now"
+        },
+
     ],
     2: [{
             question: "Quel fichier contient les utilisateurs sous Linux ?",
