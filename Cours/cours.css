@@ -188,21 +188,6 @@ h3 {
     transition: background-color 0.3s ease;
 }
 
-.social-btn.facebook {
-    background-color: #3b5998;
-}
-
-.social-btn.twitter {
-    background-color: #1da1f2;
-}
-
-.social-btn.linkedin {
-    background-color: #0077b5;
-}
-
-.social-btn:hover {
-    opacity: 0.8;
-}
 
 .socialbtn {
     color: white;

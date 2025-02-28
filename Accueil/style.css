@@ -209,6 +209,7 @@ footer {
     display: center;
     gap: 10px;
     margin-bottom: 10px; /* Ajoute un espace entre chaque bouton */
+
 }
 
 .socialbtn {
@@ -221,26 +222,31 @@ footer {
     cursor: pointer;
     transition: 0.3s;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 .facebook {
     background: linear-gradient(to right, #3b82f6, #2563eb, #1d4ed8);
     box-shadow: 0 0 10px #3b82f6;
+    text-decoration: underline;
 }
 
 .tiktok {
     background: linear-gradient(to right, #ef4444, #dc2626, #b91c1c);
     box-shadow: 0 0 10px #ef4444;
+    text-decoration: underline;
 }
 
 .linkedin {
     background: linear-gradient(to right, #60a5fa, #3b82f6, #2563eb);
     box-shadow: 0 0 10px #60a5fa;
+    text-decoration: underline;
 }
 
 .instagram {
     background: linear-gradient(to right, #ec4899, #db2777, #be185d);
     box-shadow: 0 0 10px #ec4899;
+    text-decoration: underline;
 }
 
 .socialbtn:hover {
