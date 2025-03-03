@@ -253,3 +253,81 @@ footer {
     transform: scale(1.05);
     opacity: 0.9;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-right {
+    margin-left: auto; /* Pousse le bouton à droite */
+    display: flex;
+    align-items: center;
+  }
+  
+  .animated-button {
+    font-weight: bold;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    width: 95.02px;
+    height: 42.66px;
+    border: none;
+    background-color: #ff7f40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .animated-button .span-mother {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .animated-button:hover .span-mother {
+    position: absolute;
+  }
+  
+  .animated-button:hover .span-mother span {
+    transform: translateY(1.2em);
+  }
+  
+  .animated-button .span-mother2 {
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  .animated-button .span-mother2 span {
+    transform: translateY(-1.2em);
+  }
+  
+  .animated-button:hover .span-mother2 span {
+    transform: translateY(0);
+  }
+  
+  .header-right {
+    position: absolute;
+    top: 10px; /* Ajuste la hauteur selon ton design */
+    right: 10px; /* Aligne le bouton à droite */
+    display: flex;
+    align-items: center;
+  }
+  
