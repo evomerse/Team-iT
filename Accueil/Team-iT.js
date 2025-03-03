@@ -204,7 +204,7 @@ const questions = {
             options: ["~/.profile", "~/.bashrc", "~/.bash_profile", "/etc/bashrc"],
             answer: "~/.bashrc"
         },
-    ]
+    ],
         // Formation 6: Gestion des utilisateurs et permissions
         6: [{
             question: "Quelle commande permet de créer un nouvel utilisateur sous Linux ?",
@@ -313,7 +313,6 @@ const questions = {
             answer: "journalctl -u service"
         }
     ]
-};
 };
 
 function startQuiz(formationId) {
