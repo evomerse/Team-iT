@@ -62,6 +62,46 @@ const questions = {
             options: ["top", "ps", "kill", "df"],
             answer: "top"
         },
+        {
+            question: "Quelle commande permet de changer les droits d'un fichier ?",
+            options: ["chmod", "chown", "chgrp", "ls -l"],
+            answer: "chmod"
+        },
+        {
+            question: "Quel fichier contient les informations de montage des systèmes de fichiers ?",
+            options: ["/var/mount", "/mnt/fstab", "/etc/mount", "/etc/fstab"],
+            answer: "/etc/fstab"
+        },
+        {
+            question: "Quelle commande permet d'afficher l'espace disque utilisé sur les partitions ?",
+            options: ["du", "df", "lsblk", "fdisk"],
+            answer: "df"
+        },
+        {
+            question: "Quel service est utilisé pour gérer les journaux système sous Linux ?",
+            options: ["syslog", "crontab", "systemctl", "mount"],
+            answer: "syslog"
+        },
+        {
+            question: "Quelle commande permet de programmer une tâche récurrente sous Linux ?",
+            options: ["nohup", "at", "systemctl", "crontab"],
+            answer: "crontab"
+        },
+        {
+            question: "Quelle commande permet de voir les dernières lignes d'un fichier journal en temps réel ?",
+            options: ["cat", "less", "tail -f", "cat"],
+            answer: "tail -f"
+        },
+        {
+            question: "Comment ajouter un nouvel utilisateur sous Linux ?",
+            options: ["newuser", "useradd", "adduser", "createuser"],
+            answer: "useradd"
+        },
+        {
+            question: "Quel fichier définit les mots de passe des utilisateurs sous Linux ?",
+            options: ["/etc/shadow", "/etc/passwd", "/home/.passwd", "/var/log/auth.log"],
+            answer: "/etc/shadow"
+        },
     ],
     3: [{
             question: "Quelle commande est utilisée pour changer les permissions ?",
