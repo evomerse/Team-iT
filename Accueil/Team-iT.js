@@ -164,6 +164,46 @@ const questions = {
             options: ["bash script.sh", "run script.sh", "execute script.sh", "start script.sh"],
             answer: "bash script.sh"
         },
+        {
+            question: "Quel symbole est utilisé pour commenter une ligne dans un script Bash ?",
+            options: ["/* */", "--", "//", "#"],
+            answer: "#"
+        },
+        {
+            question: "Quelle ligne est souvent placée en haut d'un script Bash pour spécifier l'interpréteur ?",
+            options: ["#!/bin/bash", "#!/usr/bin/python", "#!/bin/sh", "#!/usr/bin/env"],
+            answer: "#!/bin/bash"
+        },
+        {
+            question: "Quelle commande permet de donner les droits d'exécution à un script ?",
+            options: ["execute script.sh", "chmod +x script.sh", "start script.sh", "allow script.sh"],
+            answer: "chmod +x script.sh"
+        },
+        {
+            question: "Quelle commande est utilisée pour afficher un message dans un script Bash ?",
+            options: ["print('Bonjour')", "display 'Bonjour'", "msg 'Bonjour'", "echo 'Bonjour'"],
+            answer: "echo 'Bonjour'"
+        },
+        {
+            question: "Quelle commande permet de stocker la sortie d'une commande dans une variable ?",
+            options: ["var=$(commande)", "var=commande", "var:[commande]", "var <- commande"],
+            answer: "var=$(commande)"
+        },
+        {
+            question: "Quel mot-clé est utilisé pour créer une boucle dans un script Bash ?",
+            options: ["for", "loop", "repeat", "foreach"],
+            answer: "for"
+        },
+        {
+            question: "Quelle commande permet d'attendre quelques secondes avant d'exécuter la suite du script ?",
+            options: ["wait 5", "pause 5", "sleep 5", "delay 5"],
+            answer: "sleep 5"
+        },
+        {
+            question: "Quel fichier est exécuté automatiquement au démarrage d’un shell Bash ?",
+            options: ["~/.profile", "~/.bashrc", "~/.bash_profile", "/etc/bashrc"],
+            answer: "~/.bashrc"
+        },
     ]
 };
 
