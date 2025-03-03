@@ -248,7 +248,7 @@ header{
 
 .container1 {
     color: white;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
     font-size: 30px;
     margin-left: 10rem;
     margin-right: 10rem;
