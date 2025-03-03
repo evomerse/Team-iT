@@ -113,6 +113,46 @@ const questions = {
             options: ["Sécuriser les processus", "Gérer les fichiers", "Afficher les utilisateurs", "Changer les permissions"],
             answer: "Sécuriser les processus"
         },
+        {
+            question: "Quelle commande permet de voir les tentatives de connexion échouées ?",
+            options: ["dmesg", "faillog", "journalctl", "netstat"],
+            answer: "faillog"
+        },
+        {
+            question: "Quel fichier contient les règles du pare-feu iptables ?",
+            options: ["/etc/iptables/rules.v4", "/etc/firewall.conf", "/var/log/iptables.log", "/usr/bin/iptables"],
+            answer: "/etc/iptables/rules.v4"
+        },
+        {
+            question: "Quelle commande permet de voir les connexions réseau actives ?",
+            options: ["top", "chmod", "netstat -tunapl", "ps aux"],
+            answer: "netstat -tunapl"
+        },
+        {
+            question: "Quel fichier contient les mots de passe hashés des utilisateurs ?",
+            options: ["/etc/passwd", "/etc/shadow", "/var/log/auth.log", "/home/user/.password"],
+            answer: "/etc/shadow"
+        },
+        {
+            question: "Quelle commande permet de bloquer un utilisateur ?",
+            options: ["passwd -l nom_utilisateur", "userdel nom_utilisateur", "usermod -L nom_utilisateur", "disable-user nom_utilisateur"],
+            answer: "usermod -L nom_utilisateur"
+        },
+        {
+            question: "Quel est le but de la commande'sudo'?",
+            options: ["Changer les droits d'un fichier", "Modifier les mots de passe des utilisateurs", "Vérifier les journaux système", "Exécuter une commande avec des privilèges élevés"],
+            answer: "Exécuter une commande avec des privilèges élevés"
+        },
+        {
+            question: "Quelle commande permet de vérifier les permissions d'un fichier ?",
+            options: ["ls -l", "chmod", "whoami", "pwd"],
+            answer: "ls -l"
+        },
+        {
+            question: "Quel outil est utilisé pour scanner les vulnérabilités sur un serveur Linux ?",
+            options: ["top", "Lynis", "journalctl", "grep"],
+            answer: "Lynis"
+        },
     ],
     4: [{
             question: "Quel langage est couramment utilisé pour les scripts Linux ?",
