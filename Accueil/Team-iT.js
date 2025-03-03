@@ -205,6 +205,115 @@ const questions = {
             answer: "~/.bashrc"
         },
     ]
+        // Formation 6: Gestion des utilisateurs et permissions
+        6: [{
+            question: "Quelle commande permet de créer un nouvel utilisateur sous Linux ?",
+            options: ["adduser", "newuser", "useradd -d", "createuser"],
+            answer: "adduser"
+        },
+        {
+            question: "Comment ajouter un utilisateur à un groupe existant ?",
+            options: ["groupadd user group", "usermod -aG group user", "addgroup user group", "modgroup -a user group"],
+            answer: "usermod -aG group user"
+        },
+        {
+            question: "Quelle commande permet de modifier le mot de passe d'un utilisateur ?",
+            options: ["passwd user", "chpasswd user", "setpass user", "modpass user"],
+            answer: "passwd user"
+        },
+        {
+            question: "Quelle commande permet de voir la liste des utilisateurs enregistrés sur un système Linux ?",
+            options: ["cat /etc/passwd", "ls -user", "list-users", "whoami"],
+            answer: "cat /etc/passwd"
+        },
+        {
+            question: "Quelle est la différence entre les permissions 'r', 'w', et 'x' sous Linux ?",
+            options: ["Lire, écrire, exécuter", "Rouge, blanc, xénon", "Root, web, xorg", "Rien, windows, x11"],
+            answer: "Lire, écrire, exécuter"
+        },
+        {
+            question: "Comment supprimer un utilisateur et son répertoire personnel ?",
+            options: ["deluser --remove-home", "rm -rf /home/user", "userdel -r", "delete user"],
+            answer: "userdel -r"
+        },
+        {
+            question: "Quelle commande permet de voir les permissions d’un fichier ou d’un dossier ?",
+            options: ["ls -l", "permissions -show", "fileinfo", "permcheck"],
+            answer: "ls -l"
+        },
+        {
+            question: "Que signifie la permission '755' sur un fichier ?",
+            options: ["Le propriétaire a tous les droits, les autres peuvent lire et exécuter", "Seul root peut lire", "Aucune permission", "Écriture seule pour tous"],
+            answer: "Le propriétaire a tous les droits, les autres peuvent lire et exécuter"
+        },
+        {
+            question: "Comment changer le propriétaire d'un fichier sous Linux ?",
+            options: ["chown newuser fichier", "change-owner fichier", "setuser fichier", "filemod -owner"],
+            answer: "chown newuser fichier"
+        },
+        {
+            question: "Quelle commande permet de changer le groupe propriétaire d'un fichier ?",
+            options: ["chgrp", "modgroup", "setgroup", "groupmod"],
+            answer: "chgrp"
+        }
+    ],
+
+
+    7: [{
+            question: "Quelle commande permet d’installer un paquet sous Debian/Ubuntu ?",
+            options: ["yum install package", "dnf install package", "apt install package", "rpm -i package"],
+            answer: "apt install package"
+        },
+        {
+            question: "Quelle est l’équivalent d’`apt` pour les distributions basées sur Red Hat ?",
+            options: ["dnf", "yum", "rpm", "pacman"],
+            answer: "dnf"
+        },
+        {
+            question: "Comment mettre à jour la liste des paquets disponibles sous Ubuntu ?",
+            options: ["apt update", "pkg upgrade", "yum refresh", "dnf sync"],
+            answer: "apt update"
+        },
+        {
+            question: "Quelle commande permet de voir si un paquet est installé ?",
+            options: ["dpkg -l package", "pkgcheck package", "check-pkg package", "apt search package"],
+            answer: "dpkg -l package"
+        },
+        {
+            question: "Comment désinstaller un paquet avec `apt` sous Debian ?",
+            options: ["apt remove package", "apt delete package", "apt uninstall package", "apt purge package"],
+            answer: "apt remove package"
+        }
+    ],
+
+ 
+    8: [{
+            question: "Quelle commande permet de voir les processus en cours d’exécution ?",
+            options: ["ps aux", "ls process", "proc -list", "jobs -all"],
+            answer: "ps aux"
+        },
+        {
+            question: "Comment tuer un processus en utilisant son identifiant (PID) ?",
+            options: ["stop pid", "terminate pid", "kill pid", "remove pid"],
+            answer: "kill pid"
+        },
+        {
+            question: "Quelle commande affiche les processus les plus gourmands en ressources ?",
+            options: ["top", "uptime", "free -m", "jobs -l"],
+            answer: "top"
+        },
+        {
+            question: "Comment démarrer un service sous Linux avec `systemctl` ?",
+            options: ["systemctl start service", "service start systemctl", "run servicectl start", "init.d start service"],
+            answer: "systemctl start service"
+        },
+        {
+            question: "Quelle commande permet d'afficher les journaux d'un service `systemd` ?",
+            options: ["journalctl -u service", "logctl service", "showlogs service", "syslog service"],
+            answer: "journalctl -u service"
+        }
+    ]
+};
 };
 
 function startQuiz(formationId) {
