@@ -107,6 +107,9 @@ header{
 
 .content h2{
     text-align: center;
+    -webkit-text-stroke: 1px black;
+    color: #fff;
+    font-size: 3rem;
 
 }
 
