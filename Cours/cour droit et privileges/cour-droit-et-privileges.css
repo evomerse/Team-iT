@@ -10,7 +10,7 @@ body {
     min-height: 100vh; /* Assure que le fond couvre toute la hauteur de la page */
 }
 
-header {
+header{
     background-color: #4b7151;
     color: white;
     text-align: center;
