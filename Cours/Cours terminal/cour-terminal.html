@@ -12,97 +12,97 @@
 </head>
 <body>
     
-<div class="cours-terminal">
+    <div class="cours-terminal">
 
-    <header>
-        <button class="Btn1" onclick="goToMenu()">
-            <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
-            <div class="text">Menu</div>
-        </button>
-            <h1>Cour sur le terminal</h1>
-            <p>Maîtrisez Linux avec les formations interactives et quiz en ligne de Team-iT</p>
-    </header>
-</div>
+        <header>
+            <button class="Btn1" onclick="goToMenu()">
+                <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
+                <div class="text">Menu</div>
+            </button>
+                <h1>Cour sur le terminal</h1>
+                <p>Maîtrisez Linux avec les formations interactives et quiz en ligne de Team-iT</p>
+        </header>
+    </div>
 
-<div class="content">
+    <div class="content">
 
- <h2>Contenue de la formation</h2>
+    <h2>Contenue de la formation</h2>
 
- <div class="video-wrapper">
-    <div class="youtube-container" data-video-id="_ZJ9zGgI22Y">
-        <div class="youtube-thumbnail" onclick="loadVideo(this)">
-            <img src="/Images/image cour terminal.png" alt="Miniature de la vidéo">
-            <div class="play-button">▶</div>
+    <div class="video-wrapper">
+        <div class="youtube-container" data-video-id="_ZJ9zGgI22Y">
+            <div class="youtube-thumbnail" onclick="loadVideo(this)">
+                <img src="/Images/image cour terminal.png" alt="Miniature de la vidéo">
+                <div class="play-button">▶</div>
+            </div>
         </div>
+
+    </div>
     </div>
 
-</div>
-</div>
+    <button type="button" class="button" onclick="goToCours()">
+        <div class="button-icon">
+            <svg width="25px" height="25px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000000" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"></path>
+                <path fill="#000000" d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"></path>
+            </svg>
+        </div>
+        <p class="button-text">Go Back</p>
+    </button>
 
-<button type="button" class="button" onclick="goToCours()">
-    <div class="button-icon">
-        <svg width="25px" height="25px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#000000" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"></path>
-            <path fill="#000000" d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"></path>
-        </svg>
+
+    <div class="container1">
+        <h1>💻 Résumé des Commandes Linux</h1>
+        
+        <h2>🗑️ Suppression de fichiers et dossiers</h2>
+        <p>Utiliser <code>rm nom_fichier</code> pour supprimer un fichier.</p>
+        <p>Pour un dossier, utiliser <code>rm -r nom_dossier</code>.</p>
+        
+        <h2>📄 Création de fichiers et dossiers</h2>
+        <p>Créer un fichier : <code>touch fichier.txt</code></p>
+        <p>Créer un dossier : <code>mkdir nom_dossier</code></p>
+        
+        <h2>📋 Copie et déplacement</h2>
+        <p>Copier un fichier : <code>cp fichier.txt fichier2.txt</code></p>
+        <p>Renommer/Déplacer un fichier : <code>mv fichier.txt nouveau_nom.txt</code></p>
+        <p>Déplacer vers un dossier : <code>mv fichier.txt dossier/</code></p>
+        
+        <h2>📝 Édition de fichiers</h2>
+        <p>Ouvrir un fichier avec Nano : <code>nano fichier.txt</code></p>
+        <p>Vérifier son contenu : <code>cat fichier.txt</code></p>
+        
+        <h2>⚙️ Exécution d’un script Bash</h2>
+        <p>Créer un script : <code>nano script.sh</code></p>
+        <p>Rendre le script exécutable : <code>chmod +x script.sh</code></p>
+        <p>Exécuter le script : <code>./script.sh</code></p>
+        
+        <h2>📦 Installation de paquets</h2>
+        <p>Installer un programme (ex: Git) : <code>sudo apt-get install git</code></p>
     </div>
-    <p class="button-text">Go Back</p>
-</button>
-
-
-<div class="container1">
-    <h1>💻 Résumé des Commandes Linux</h1>
-    
-    <h2>🗑️ Suppression de fichiers et dossiers</h2>
-    <p>Utiliser <code>rm nom_fichier</code> pour supprimer un fichier.</p>
-    <p>Pour un dossier, utiliser <code>rm -r nom_dossier</code>.</p>
-    
-    <h2>📄 Création de fichiers et dossiers</h2>
-    <p>Créer un fichier : <code>touch fichier.txt</code></p>
-    <p>Créer un dossier : <code>mkdir nom_dossier</code></p>
-    
-    <h2>📋 Copie et déplacement</h2>
-    <p>Copier un fichier : <code>cp fichier.txt fichier2.txt</code></p>
-    <p>Renommer/Déplacer un fichier : <code>mv fichier.txt nouveau_nom.txt</code></p>
-    <p>Déplacer vers un dossier : <code>mv fichier.txt dossier/</code></p>
-    
-    <h2>📝 Édition de fichiers</h2>
-    <p>Ouvrir un fichier avec Nano : <code>nano fichier.txt</code></p>
-    <p>Vérifier son contenu : <code>cat fichier.txt</code></p>
-    
-    <h2>⚙️ Exécution d’un script Bash</h2>
-    <p>Créer un script : <code>nano script.sh</code></p>
-    <p>Rendre le script exécutable : <code>chmod +x script.sh</code></p>
-    <p>Exécuter le script : <code>./script.sh</code></p>
-    
-    <h2>📦 Installation de paquets</h2>
-    <p>Installer un programme (ex: Git) : <code>sudo apt-get install git</code></p>
-</div>
 
 
 
 
 
 
-<footer class="footer">
-    <p class="copyright">© 2025 Team-iT. Tous droits réservés.</p>
-    
-    <!-- Saut de ligne -->
-    <br> 
+    <footer class="footer">
+        <p class="copyright">© 2025 Team-iT. Tous droits réservés.</p>
+        
+        <!-- Saut de ligne -->
+        <br> 
 
-    <div class="social-buttons">
-        <a href="https://www.facebook.com/p/Team-IT-100064020698613/" target="_blank" class="socialbtn facebook">Facebook</a>
-        <a href="https://www.tiktok.com/@teamit_conseil" target="_blank" class="socialbtn tiktok">TikTok</a>
-        <a href="https://www.linkedin.com/company/team-it-group/posts/?feedView=all" target="_blank" class="socialbtn linkedin">LinkedIn</a>
-        <a href="https://www.instagram.com/teamit_conseil/" target="_blank" class="socialbtn instagram">Instagram</a>
-    </div>
-</footer>
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/p/Team-IT-100064020698613/" target="_blank" class="socialbtn facebook">Facebook</a>
+            <a href="https://www.tiktok.com/@teamit_conseil" target="_blank" class="socialbtn tiktok">TikTok</a>
+            <a href="https://www.linkedin.com/company/team-it-group/posts/?feedView=all" target="_blank" class="socialbtn linkedin">LinkedIn</a>
+            <a href="https://www.instagram.com/teamit_conseil/" target="_blank" class="socialbtn instagram">Instagram</a>
+        </div>
+    </footer>
 
-<script src="/Cours/Cours terminal/cour-terminal.js"></script>
-<script>
-    function goToCours() {
-        window.location.href = "/Cours/cours.html";
-    }
-</script>
+    <script src="/Cours/Cours terminal/cour-terminal.js"></script>
+    <script>
+        function goToCours() {
+            window.location.href = "/Cours/cours.html";
+        }
+    </script>
 </body>
 </html>
