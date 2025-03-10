@@ -3,11 +3,7 @@ body {
     font-family: "Ubuntu", serif;
     margin: 0;
     padding: 0;
-    background-image: url('/Images/Background_2.jpg'); /* Remplace par l'URL de ton image */
-    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
-    background-position: center; /* Centre l'image */
-    background-repeat: no-repeat; /* Empêche la répétition */
-    background-attachment: fixed; /* Fixe l'image de fond */
+    background-color: #eee;
     min-height: 100vh; /* Assure que le fond couvre toute la hauteur de la page */
 }
 
