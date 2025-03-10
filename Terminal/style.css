@@ -10,8 +10,7 @@ body {
     min-height: 100vh; /* Assure que le fond couvre toute la hauteur de la page */
 }
 
-header,
-footer {
+header{
     background-color: #4b7151;
     color: white;
     text-align: center;
@@ -47,20 +46,15 @@ footer {
 }
 
 .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin-right: 5px;
-    font-size: 8px;
-    height: 12px;
-    width: 12px;
-    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: white;
+    background-color: #ff7f40;
     border: none;
-    border-radius: 100%;
-    background: linear-gradient(#7d7871 0%, #595953 100%);
-    text-shadow: 0px 1px 0px rgba(255,255,255,0.2);
-    box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .btn-color {
@@ -252,11 +246,19 @@ footer {
     transform: translate(2px ,2px);
 }
 
-.social-buttons {
-    display: flex;
+footer {
+    background-color: #4b7151;
+    color: white;
+    text-align: center;
     justify-content: center;
+    padding: 1em 0;
+    margin: 0rem;
+}
+
+.social-buttons {
+    display: center;
     gap: 10px;
-    margin-top: 10px;
+    margin-bottom: 10px; /* Ajoute un espace entre chaque bouton */
 }
 
 .socialbtn {
@@ -269,29 +271,110 @@ footer {
     cursor: pointer;
     transition: 0.3s;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 .facebook {
     background: linear-gradient(to right, #3b82f6, #2563eb, #1d4ed8);
     box-shadow: 0 0 10px #3b82f6;
+    text-decoration: underline;
 }
 
 .tiktok {
     background: linear-gradient(to right, #ef4444, #dc2626, #b91c1c);
     box-shadow: 0 0 10px #ef4444;
+    text-decoration: underline;
 }
 
 .linkedin {
     background: linear-gradient(to right, #60a5fa, #3b82f6, #2563eb);
     box-shadow: 0 0 10px #60a5fa;
+    text-decoration: underline;
 }
 
 .instagram {
     background: linear-gradient(to right, #ec4899, #db2777, #be185d);
     box-shadow: 0 0 10px #ec4899;
+    text-decoration: underline;
 }
 
 .socialbtn:hover {
     transform: scale(1.05);
     opacity: 0.9;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-right {
+    margin-left: auto; /* Pousse le bouton à droite */
+    display: flex;
+    align-items: center;
+  }
+  
+  .animated-button {
+    font-weight: bold;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    width: 95.02px;
+    height: 42.66px;
+    border: none;
+    background-color: #ff7f40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .animated-button .span-mother {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .animated-button:hover .span-mother {
+    position: absolute;
+  }
+  
+  .animated-button:hover .span-mother span {
+    transform: translateY(1.2em);
+  }
+  
+  .animated-button .span-mother2 {
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  .animated-button .span-mother2 span {
+    transform: translateY(-1.2em);
+  }
+  
+  .animated-button:hover .span-mother2 span {
+    transform: translateY(0);
+  }
+  
+  .header-right {
+    position: absolute;
+    top: 10px; /* Ajuste la hauteur selon ton design */
+    right: 10px; /* Aligne le bouton à droite */
+    display: flex;
+    align-items: center;
+  }
