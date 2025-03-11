@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations Linux</title>
+    <link rel="icon" type="image/jpeg" href="/Images/team_it_group_logo-removebg-preview.png">
+    <link rel="stylesheet" href="/Cours/Les bases de linux/Les-bases-de-linux.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="cours-terminal">
+
+        <header>
+            <button class="Btn1" onclick="goToMenu()">
+                <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
+                <div class="text">Menu</div>
+            </button>
+                <h1>L'histoire de linux</h1>
+                <p>Maîtrisez Linux avec les formations interactives et quiz en ligne de Team-iT</p>
+        </header>
+    </div>
+
+    <div class="content">
+
+    <h2>Contenue de la formation</h2>
+
+    <div class="video-wrapper">
+        <div class="youtube-container" data-video-id="OWrqaxqWqN0">
+            <div class="youtube-thumbnail" onclick="loadVideo(this)">
+                <img src="/Images/les bases de linux.jpg" alt="Miniature de la vidéo">
+                <div class="play-button">▶</div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <button type="button" class="button" onclick="goToCours()">
+        <div class="button-icon">
+            <svg width="25px" height="25px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000000" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"></path>
+                <path fill="#000000" d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"></path>
+            </svg>
+        </div>
+        <p class="button-text">Go Back</p>
+    </button>
+
+    <div class="container1">
+        <h1>🐧 Les Bases de Linux - Tutoriel Débutant 🚀</h1>
+
+    <h2>🔍 Introduction</h2>
+    <p>Ce tutoriel explore les fondamentaux de Linux, de son installation à son utilisation quotidienne.</p>
+
+    <h2>🛠️ Linux, c'est quoi ?</h2>
+    <ul>
+        <li>Linux est un <strong>noyau</strong> (Kernel) qui sert de base aux systèmes d'exploitation.</li>
+        <li>Un système complet avec une interface graphique et des logiciels est appelé une <strong>distribution Linux</strong>.</li>
+        <li>Exemples de distributions : Ubuntu, Linux Mint, Debian, Fedora...</li>
+    </ul>
+
+    <h2>🌍 Les distributions Linux</h2>
+    <ul>
+        <li>Chaque distribution peut être basée sur une autre (ex : Ubuntu basé sur Debian, Linux Mint basé sur Ubuntu).</li>
+        <li>Il existe environ <strong>600 distributions Linux</strong></li>
+    </ul>
+
+    <h2>🎨 Environnements de bureau</h2>
+    <ul>
+        <li><strong>KDE Plasma</strong> - Similaire à Windows.</li>
+        <li><strong>GNOME</strong> - Interface populaire et moderne.</li>
+        <li><strong>Cinnamon</strong> - Convivial et accessible.</li>
+        <li><strong>XFCE</strong> - Léger et performant.</li>
+    </ul>
+
+    <h2>📥 Installation de Linux</h2>
+    <ul>
+        <li>Télécharger un <strong>fichier ISO</strong> depuis le site officiel.</li>
+        <li>Créer une clé USB bootable avec <strong>Ventoy</strong> ou <strong>Balena Etcher</strong>.</li>
+        <li>Démarrer l'ordinateur depuis la clé USB et suivre les instructions.</li>
+        <li>Possibilité d'installer Linux <strong>en dual-boot</strong> avec Windows.</li>
+    </ul>
+
+    <h2>💻 Premiers pas après l’installation</h2>
+    <ul>
+        <li>Une <strong>fenêtre de bienvenue</strong> guide les premiers réglages.</li>
+        <li>Personnalisation avec le <strong>panneau de configuration</strong>.</li>
+        <li>Accès aux <strong>fichiers</strong> et gestion du bureau, similaires à Windows.</li>
+    </ul>
+
+    <h2>🌐 Internet et Bureautique</h2>
+    <ul>
+        <li>Navigateurs intégrés (Firefox, Chrome installable via le store).</li>
+        <li>Alternatives à Microsoft Office : <strong>LibreOffice</strong> pour la bureautique.</li>
+    </ul>
+
+    <h2>🎮 Gaming sur Linux</h2>
+    <ul>
+        <li>Le gaming progresse sous Linux grâce à <strong>Steam et Proton</strong>.</li>
+        <li>Steam Deck contribue à améliorer l’expérience de jeu.</li>
+    </ul>
+
+    <h2>📦 Installation de logiciels</h2>
+    <ul>
+        <li>Linux possède des <strong>stores d’applications</strong> comme le Windows Store.</li>
+        <li>Installation facile via le terminal avec <code>apt install [logiciel]</code>.</li>
+    </ul>
+
+    <h2>🖥️ Le Terminal Linux</h2>
+    <ul>
+        <li>Similaire à l'invite de commande Windows.</li>
+        <li><code>ls</code> - Liste les fichiers et dossiers.</li>
+        <li><code>mkdir [nom]</code> - Crée un dossier.</li>
+        <li><code>apt install [logiciel]</code> - Installe un logiciel.</li>
+    </ul>
+
+    <h2>💡 Pourquoi utiliser Linux ?</h2>
+    <ul>
+        <li>✅ <strong>Gratuit</strong> et open-source.</li>
+        <li>✅ Fonctionne sur <strong>des PC anciens</strong> et optimise leurs performances.</li>
+        <li>✅ Offre plus de <strong>contrôle et de confidentialité</strong>.</li>
+        <li>✅ Alternative à Windows pour plus de liberté.</li>
+    </ul>
+
+    <h2>🔚 Conclusion</h2>
+    <p>Linux est une excellente alternative pour explorer un nouveau monde informatique ! 🌍🔥</p>
+    </div>
+
+
+
+    <footer class="footer">
+        <p class="copyright">© 2025 Team-iT. Tous droits réservés.</p>
+        
+        <!-- Saut de ligne -->
+        <br> 
+
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/p/Team-IT-100064020698613/" target="_blank" class="socialbtn facebook">Facebook</a>
+            <a href="https://www.tiktok.com/@teamit_conseil" target="_blank" class="socialbtn tiktok">TikTok</a>
+            <a href="https://www.linkedin.com/company/team-it-group/posts/?feedView=all" target="_blank" class="socialbtn linkedin">LinkedIn</a>
+            <a href="https://www.instagram.com/teamit_conseil/" target="_blank" class="socialbtn instagram">Instagram</a>
+        </div>
+    </footer>
+
+
+
+    <script src="/Cours/Les bases de linux/Les-bases-de-linux.js"></script>
+</body>
+</html>
