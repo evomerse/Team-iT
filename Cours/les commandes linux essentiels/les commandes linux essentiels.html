@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations Linux</title>
+    <link rel="icon" type="image/jpeg" href="/Images/team_it_group_logo-removebg-preview.png">
+    <link rel="stylesheet" href="/Cours/les commandes linux essentiels/les commandes linux essentiels.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="cours-terminal">
+
+        <header>
+            <button class="Btn1" onclick="goToMenu()">
+                <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
+                <div class="text">Menu</div>
+            </button>
+                <h1>L'histoire de linux</h1>
+                <p>Maîtrisez Linux avec les formations interactives et quiz en ligne de Team-iT</p>
+        </header>
+    </div>
+
+    <div class="content">
+
+    <h2>Contenue de la formation</h2>
+
+    <div class="video-wrapper">
+        <div class="youtube-container" data-video-id="RkGUWKsE_Ng">
+            <div class="youtube-thumbnail" onclick="loadVideo(this)">
+                <img src="/Images/les commandes linux essentiels.jpg" alt="Miniature de la vidéo">
+                <div class="play-button">▶</div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <button type="button" class="button" onclick="goToCours()">
+        <div class="button-icon">
+            <svg width="25px" height="25px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000000" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"></path>
+                <path fill="#000000" d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"></path>
+            </svg>
+        </div>
+        <p class="button-text">Go Back</p>
+    </button>
+
+    <div class="container1">
+        <h1>💻 51 Commandes Linux de base à connaître ! 🚀</h1>
+    
+    <h2>📌 Introduction</h2>
+    <p>Cette vidéo présente <strong>51 commandes Linux</strong> essentielles pour les débutants et les utilisateurs avancés.</p>
+    
+    <h2>🗓️ Gestion du temps</h2>
+    <ul>
+        <li><strong>date</strong> - Affiche la date actuelle.</li>
+        <li><strong>date +%d-%m-%Y %H:%M:%S</strong> - Personnalise l'affichage.</li>
+    </ul>
+
+    <h2>📖 Obtenir de l'aide</h2>
+    <ul>
+        <li><strong>man [commande]</strong> - Affiche le manuel d’une commande.</li>
+        <li><strong>q</strong> - Quitter le manuel.</li>
+    </ul>
+
+    <h2>👤 Gestion des utilisateurs</h2>
+    <ul>
+        <li><strong>w / who</strong> - Voir les utilisateurs connectés.</li>
+        <li><strong>id</strong> - Affiche l'ID utilisateur et groupe.</li>
+    </ul>
+
+    <h2>📂 Navigation dans les fichiers</h2>
+    <ul>
+        <li><strong>pwd</strong> - Affiche le répertoire actuel.</li>
+        <li><strong>ls -la</strong> - Liste les fichiers, y compris les fichiers cachés.</li>
+    </ul>
+
+    <h2>🔑 Gestion des permissions</h2>
+    <ul>
+        <li><strong>chmod o-x [fichier]</strong> - Supprime l'exécution pour les autres.</li>
+    </ul>
+
+    <h2>🔗 Liens et raccourcis</h2>
+    <ul>
+        <li><strong>ln -s [fichier] [lien]</strong> - Crée un lien symbolique.</li>
+        <li><strong>unlink [lien]</strong> - Supprime un raccourci.</li>
+    </ul>
+
+    <h2>📁 Manipulation de répertoires</h2>
+    <ul>
+        <li><strong>mkdir [nom]</strong> - Crée un dossier.</li>
+        <li><strong>cd [nom]</strong> - Se déplacer dans un dossier.</li>
+    </ul>
+
+    <h2>📝 Gestion des fichiers</h2>
+    <ul>
+        <li><strong>echo "texte" > fichier.txt</strong> - Écrit du texte dans un fichier.</li>
+        <li><strong>cat [fichier]</strong> - Affiche le contenu d’un fichier.</li>
+    </ul>
+
+    <h2>🔎 Recherche et tri</h2>
+    <ul>
+        <li><strong>grep "mot" [fichier]</strong> - Recherche un mot dans un fichier.</li>
+        <li><strong>find /home -name "*.txt"</strong> - Recherche des fichiers par nom.</li>
+    </ul>
+
+    <h2>📤 Copie et suppression</h2>
+    <ul>
+        <li><strong>cp [source] [destination]</strong> - Copie un fichier.</li>
+        <li><strong>mv [source] [destination]</strong> - Déplace ou renomme un fichier.</li>
+        <li><strong>rm [fichier]</strong> - Supprime un fichier.</li>
+    </ul>
+
+    <h2>📊 Informations système</h2>
+    <ul>
+        <li><strong>uname -a</strong> - Affiche les infos du système.</li>
+        <li><strong>top</strong> - Affiche les processus en cours.</li>
+    </ul>
+
+    <h2>🌍 Réseau</h2>
+    <ul>
+        <li><strong>ifconfig</strong> - Affiche les interfaces réseau.</li>
+        <li><strong>ping google.com</strong> - Teste la connexion Internet.</li>
+    </ul>
+
+    <h2>🛠️ Administration</h2>
+    <ul>
+        <li><strong>sudo [commande]</strong> - Exécute une commande en admin.</li>
+        <li><strong>passwd</strong> - Change un mot de passe.</li>
+    </ul>
+
+    <h2>🗄️ Gestion du stockage</h2>
+    <ul>
+        <li><strong>df -h</strong> - Affiche l’espace disque disponible.</li>
+        <li><strong>du -sh [répertoire]</strong> - Affiche la taille d’un dossier.</li>
+    </ul>
+
+    <h2>🗜️ Compression</h2>
+    <ul>
+        <li><strong>zip -r archive.zip dossier</strong> - Compresse un dossier.</li>
+        <li><strong>unzip archive.zip</strong> - Décompresse une archive.</li>
+    </ul>
+
+    <h2>🛑 Arrêter et redémarrer</h2>
+    <ul>
+        <li><strong>shutdown -h now</strong> - Éteint immédiatement.</li>
+        <li><strong>reboot</strong> - Redémarre le système.</li>
+    </ul>
+
+    <h2>📢 Conclusion</h2>
+    <p>Ces commandes sont essentielles pour maîtriser Linux. 🐧 Prêt à les tester ? 🚀</p>
+    </div>
+
+
+
+    <footer class="footer">
+        <p class="copyright">© 2025 Team-iT. Tous droits réservés.</p>
+        
+        <!-- Saut de ligne -->
+        <br> 
+
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/p/Team-IT-100064020698613/" target="_blank" class="socialbtn facebook">Facebook</a>
+            <a href="https://www.tiktok.com/@teamit_conseil" target="_blank" class="socialbtn tiktok">TikTok</a>
+            <a href="https://www.linkedin.com/company/team-it-group/posts/?feedView=all" target="_blank" class="socialbtn linkedin">LinkedIn</a>
+            <a href="https://www.instagram.com/teamit_conseil/" target="_blank" class="socialbtn instagram">Instagram</a>
+        </div>
+    </footer>
+
+
+
+    <script src="/Cours/L'histoire de linux/L'histoire-de-linux.js"></script>
+</body>
+</html>
