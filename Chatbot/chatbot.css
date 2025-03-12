@@ -11,7 +11,7 @@
   }
   
   #chatbot-header {
-    background: #007bff;
+    background: #4b7151;
     color: white;
     padding: 10px;
     text-align: center;
@@ -39,7 +39,7 @@
   }
   
   .user {
-    background: #007bff;
+    background: #4b7151;
     color: white;
     text-align: right;
     margin-left: auto;
@@ -60,7 +60,7 @@
   #chatbot-send {
     width: 60px;
     border: none;
-    background: #007bff;
+    background: #4b7151;
     color: white;
     cursor: pointer;
   }
