@@ -65,3 +65,11 @@
     cursor: pointer;
   }
   
+
+  #clear-chat {
+    width: 60px;
+    border: none;
+    background: #4b7151;
+    color: white;
+    cursor: pointer;
+  }
