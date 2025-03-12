@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     chatIcon.style.position = "fixed";
     chatIcon.style.bottom = "20px";
     chatIcon.style.right = "20px";
-    chatIcon.style.background = "#007bff";
+    chatIcon.style.background = "#ff7f40";
     chatIcon.style.color = "white";
     chatIcon.style.padding = "10px";
     chatIcon.style.borderRadius = "50%";
