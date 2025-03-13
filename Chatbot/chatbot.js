@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const clearButton = document.getElementById("clear-chat");
   const closeChat = document.getElementById("close-chat");
 
+
   const responses = {
     "ls": "'ls' liste les fichiers et dossiers dans un répertoire.",
     "cd": "'cd' permet de changer de répertoire.",
@@ -136,7 +137,6 @@ document.addEventListener("DOMContentLoaded", function () {
     "unset": "'unset' supprime une variable d'environnement."
   };
 
-
   function appendMessage(text, sender) {
     const message = document.createElement("div");
     message.classList.add("chatbot-message", sender);
@@ -152,13 +152,21 @@ document.addEventListener("DOMContentLoaded", function () {
   function loadMessages() {
     const savedMessages = localStorage.getItem("chatbotMessages");
     
-    // Si aucun message n'est enregistré dans le localStorage
     if (!savedMessages) {
         appendMessage("🤖 Bonjour ! Bienvenue sur ChatBot Linux. N'hésite pas à venir vers moi si tu as une question sur des commandes que tu ne connais pas 😉", "bot");
     } else {
         messagesContainer.innerHTML = savedMessages;
     }
-}
+  }
+
+  function findCommand(userMessage) {
+    for (let command in responses) {
+      if (userMessage.includes(command)) {
+        return responses[command]; // Retourne la réponse associée à la commande
+      }
+    }
+    return "Je ne connais pas cette commande, essayez 'man' suivi du nom d'une commande pour en savoir plus.";
+  }
 
   sendButton.addEventListener("click", function () {
     const userMessage = inputField.value.trim().toLowerCase();
@@ -168,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
     inputField.value = "";
 
     setTimeout(() => {
-      const botResponse = responses[userMessage] || "Je ne connais pas cette commande, essayez 'man' suivi du nom d'une commande pour en savoir plus.";
+      const botResponse = findCommand(userMessage); // Recherche la commande
       appendMessage("🤖 " + botResponse, "bot");
       saveMessages();
     }, 500);
