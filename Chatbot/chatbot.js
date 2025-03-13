@@ -10,6 +10,20 @@ document.addEventListener("DOMContentLoaded", function () {
   `;
   document.body.appendChild(chatbotContainer);
 
+  const chatIcon = document.createElement("div");
+  chatIcon.id = "chatbot-icon";
+  chatIcon.innerHTML = "💬";
+  chatIcon.style.position = "fixed";
+  chatIcon.style.bottom = "20px";
+  chatIcon.style.right = "20px";
+  chatIcon.style.background = "#ff7f40";
+  chatIcon.style.color = "white";
+  chatIcon.style.padding = "10px";
+  chatIcon.style.borderRadius = "50%";
+  chatIcon.style.cursor = "pointer";
+  chatIcon.style.display = "none";
+  document.body.appendChild(chatIcon);
+
   const messagesContainer = document.getElementById("chatbot-messages");
   const inputField = document.getElementById("chatbot-input");
   const sendButton = document.getElementById("chatbot-send");
@@ -122,6 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "unset": "'unset' supprime une variable d'environnement."
   };
 
+
   function appendMessage(text, sender) {
     const message = document.createElement("div");
     message.classList.add("chatbot-message", sender);
@@ -130,28 +145,29 @@ document.addEventListener("DOMContentLoaded", function () {
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
   }
 
-  function getCommandFromText(text) {
-    for (const cmd in responses) {
-      if (text.includes(cmd)) {
-        return cmd;
-      }
+  function saveMessages() {
+    localStorage.setItem("chatbotMessages", messagesContainer.innerHTML);
+  }
+
+  function loadMessages() {
+    const savedMessages = localStorage.getItem("chatbotMessages");
+    if (savedMessages) {
+      messagesContainer.innerHTML = savedMessages;
     }
-    return null;
+    appendMessage("🤖 Bonjour ! Bienvenue sur ChatBot Linux. N'hésite pas à venir vers moi si tu as une question sur des commandes que tu ne connais pas 😉", "bot");
   }
 
   sendButton.addEventListener("click", function () {
     const userMessage = inputField.value.trim().toLowerCase();
     if (!userMessage) return;
+
     appendMessage("👤 " + userMessage, "user");
     inputField.value = "";
 
     setTimeout(() => {
-      const detectedCommand = getCommandFromText(userMessage);
-      let botResponse = "Je ne connais pas cette commande, mais vous pouvez consulter la documentation Linux en ligne.";
-      if (detectedCommand) {
-        botResponse = responses[detectedCommand];
-      }
+      const botResponse = responses[userMessage] || "Je ne connais pas cette commande, essayez 'man' suivi du nom d'une commande pour en savoir plus.";
       appendMessage("🤖 " + botResponse, "bot");
+      saveMessages();
     }, 500);
   });
 
@@ -161,11 +177,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   clearButton.addEventListener("click", function () {
     messagesContainer.innerHTML = "";
+    localStorage.removeItem("chatbotMessages");
   });
 
   closeChat.addEventListener("click", function () {
     chatbotContainer.style.display = "none";
+    chatIcon.style.display = "block";
   });
 
-  appendMessage("🤖 Bonjour ! Posez-moi une question sur Linux.", "bot");
+  chatIcon.addEventListener("click", function () {
+    chatbotContainer.style.display = "block";
+    chatIcon.style.display = "none";
+  });
+
+  loadMessages();
 });
