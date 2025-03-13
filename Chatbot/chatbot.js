@@ -151,11 +151,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function loadMessages() {
     const savedMessages = localStorage.getItem("chatbotMessages");
-    if (savedMessages) {
-      messagesContainer.innerHTML = savedMessages;
+    
+    // Si aucun message n'est enregistré dans le localStorage
+    if (!savedMessages) {
+        appendMessage("🤖 Bonjour ! Bienvenue sur ChatBot Linux. N'hésite pas à venir vers moi si tu as une question sur des commandes que tu ne connais pas 😉", "bot");
+    } else {
+        messagesContainer.innerHTML = savedMessages;
     }
-    appendMessage("🤖 Bonjour ! Bienvenue sur ChatBot Linux. N'hésite pas à venir vers moi si tu as une question sur des commandes que tu ne connais pas 😉", "bot");
-  }
+}
 
   sendButton.addEventListener("click", function () {
     const userMessage = inputField.value.trim().toLowerCase();
