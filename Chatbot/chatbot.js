@@ -134,7 +134,8 @@ document.addEventListener("DOMContentLoaded", function () {
     "env": "'env' affiche les variables d'environnement.",
     "export": "'export' définit des variables d'environnement.",
     "set": "'set' affiche ou modifie les variables shell.",
-    "unset": "'unset' supprime une variable d'environnement."
+    "unset": "'unset' supprime une variable d'environnement.",
+    "help": "Pour m'utiliser mettez simplement le nom d'une commande (Exemple : ls) et je vous expliquerai à quoi cette commande sert"
   };
 
   function appendMessage(text, sender) {
@@ -165,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return responses[command]; // Retourne la réponse associée à la commande
       }
     }
-    return "Je ne connais pas cette commande, essayez 'man' suivi du nom d'une commande pour en savoir plus.";
+    return "Je ne connais pas cette commande, essayez de faire une recherche sur internet pour en savoir plus :)";
   }
 
   sendButton.addEventListener("click", function () {
