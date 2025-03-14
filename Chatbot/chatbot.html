@@ -8,6 +8,36 @@
 </head>
 <body>
 
+    <div id="chatbot">
+        <div id="chatbot-header">
+            Chatbot Linux
+            <span id="close-chat">✖</span>
+        </div>
+        <div id="chatbot-messages"></div>
+        
+        <div class="chatbot-input-container">
+            <input type="text" id="chatbot-input" placeholder="Écrivez un message...">
+            
+            <div class="chatbot-buttons">
+                <button id="chatbot-send">
+                    <div class="svg-wrapper">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M2 21l21-9L2 3v7l15 2-15 2v7z"></path>
+                        </svg>
+                    </div>
+                </button>
+
+                <button id="clear-chat">
+                    <div class="svg-wrapper">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 19h12V7H6v12zm3-9h6v6H9v-6zM3 3h18v2H3V3z"></path>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script src="/Chatbot/chatbot.js"></script>
 </body>
 </html>
