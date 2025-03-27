@@ -80,4 +80,4 @@ Ne vous inquiétez pas, l'os TeamOS est en live, pour récupérer votre Windows 
 
 
 
-#⚠️Password : teamitadmin⚠️
+# ⚠️Password : teamitadmin⚠️
