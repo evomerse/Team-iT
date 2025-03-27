@@ -73,3 +73,11 @@ Etape 1 : Préparer la clé USB avec Ventoy
 
 Ne vous inquiétez pas, l'os TeamOS est en live, pour récupérer votre Windows classique, il suffit de redémarrer votre pc, de débrancher la clé et le tour est joué 👍.
 
+
+
+
+
+
+
+
+#⚠️Password : teamitadmin⚠️
